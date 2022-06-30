@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+
+</style>
+	    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>eLastPic: Photo & Profile Picture Editor | Savir Singh</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="icon" href="/favicon.png">
+	<script type="text/javascript" src="caman.full.min.js"></script>
+	<script type="text/javascript" src="fabric.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+   <a class="navbar-brand" href="/">
+    <img src="https://savirsingh.github.io/favicon.png" width="30" height="30" class="d-inline-block align-top animated infinite heartBeat delay-2s" alt="">
+    Savir Singh,  <span class="typing text-warning"></span>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+</nav>
+
+	<h1 class="text-center p-3 mb-2 bg-info text-white">eLastPic: Photo Editor</h1>
+	<div class="editor ml-2 d-flex justify-content-around">
+
+		<!-- Tools -->
+		<div class="tools">
+			<div class="pb-2">
+			<button id="save" type="button" class="btn btn-primary">Save</button>
+			<button id="reset" type="button" class="btn btn-danger">Reset</button>
+			</div>
+			<input class="pb-2" type="file" id="load"/>
+
+			<p>
+				<label for="brightness">Brightness</label>
+				<input class="slider" id="brightness" type="range" min=-100 max=100 value=0 name="brightness">
+			</p>
+
+			<p>
+				<label for="vibrance">Vibe</label>
+				<input class="slider" id="vibrance" type="range" min=-100 max=100 value=0 name="vibrance">
+			</p>
+
+			<p>
+				<label for="hue">Colour Magic</label>
+				<input class="slider" id="hue" type="range" min=-100 max=100 value=0 name="hue">
+			</p>
+
+			<p>
+				<label for="gamma">Contrast</label>
+				<input class="slider" id="gamma" type="range" min=1 max=10 value=0 name="gamma">
+			</p>
+
+			<p>
+				<label for="clip">Clip</label>
+				<input class="slider" id="clip" type="range" min=-100 max=100 value=0 name="clip">
+			</p>
+
+			<button id="vintage" class="filter btn btn-info mb-2" type="button">Old Style</button>
+			<button id="lomo" class="filter btn btn-primary mb-2" type="button">Ghostly</button>
+			<button id="clarity" class="filter btn btn-dark mb-2" type="button">Clearing Up</button>
+			<button id="orangePeel" class="filter btn btn-warning mb-2" type="button">Orange Tint</button>
+			<button id="savir" class="filter btn btn-success mb-2 animated infinite heartBeat delay-2s" type="button">built by savir</button>
+
+
+		</div>
+
+		<!-- Editor -->
+		<!-- Canvas --> <!-- <canvas id="c" width="800" height="400"> </canvas> -->
+		<img id="image" class="img" src="">
+
+	</div>
+
+
+		<!--footer-->
+	<footer class="bg-dark pb-2">
+	      <div class="d-flex justify-content-center ">
+	    </div>
+
+	  <p class="text-center bg-dark text-white">  &copy 2022 Savir Singh. <br>Open-source for educational purposes. Using code without permission is prohibited.  </p>
+	</footer>
+
+
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/1f878bef23.js"></script>
+
+	<script type="text/javascript" src="script"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- jQuery library Typed -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+		<script>
+		      $(function() {
+		    "use strict";
+		    $(".typing").typed({
+		      strings: ["a computer programmer.", "a web developer." , "a creator."], //Headlines(Change It)
+		      loop: true,
+		      startDelay: 1e3,
+		      backDelay: 2e3
+		    });
+		    });
+		</script>
+
+</body>
+</html>

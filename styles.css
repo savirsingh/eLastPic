@@ -1,0 +1,186 @@
+*{
+	font-family: 'Raleway', sans-serif;
+}
+
+.tools{
+	float: left;
+	width: 30%;
+	text-align: left;
+}
+
+.img{
+	width:30%;
+	height: auto;
+	padding-left: 10px;
+}
+
+.editor{
+	width: 95%;
+	height: auto;
+}
+
+body{
+	text-align: center;
+}
+
+.canvas-container{
+	position: absolute;
+    width: 800px;
+    height: 400px;
+    left: 300px !important;
+    top: 0px;
+    touch-action: none;
+    user-select: none;
+}
+
+   .img-fluid:hover {
+            -ms-transform: scale(1.01); /* IE 9 */
+            -webkit-transform: scale(1.01); /* Safari 3-8 */
+            transform: scale(1.01); 
+          }
+        
+        html {
+          scroll-behavior: smooth;
+        }
+
+        &.grow {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+
+         #navbar  {
+             z-index: 99999;
+          }
+
+        .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+
+
+    *{
+      margin:0; padding: 0;
+    }
+
+
+    .skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+  }
+  .photoshop {width: 95%; background-color: #4CAF90;}
+  .illustrator {width: 95%; background-color: #2196D3;}
+    .html {width: 90%; background-color: #4CAF50;}
+  .css {width: 85%; background-color: #2196F3;}
+  .js {width: 85%; background-color: #f44336;}
+  .c {width: 80%; background-color: #f44356;}
+  .php {width: 70%; background-color: #808080;}
+  .bootstrap {width: 85%; background-color: #000000;}
+  .react {width: 85%; background-color: #fff000;}
+
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 60%;
+  }
+    .containers {
+      width: 100%;
+      background-color: #8BA7B6;
+    }
+    
+    body,html{
+       background-color: #ddd; 
+    }
+	
+	
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
